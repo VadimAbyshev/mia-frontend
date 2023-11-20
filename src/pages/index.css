@@ -1,0 +1,64 @@
+@import url(../vendor/fonts/fonts.css);
+@import url(../vendor/normalize.css);
+@import url(../blocks/body/body.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/favorites/favorites.css);
+@import url(../blocks/categories/categories.css);
+@import url(../blocks/product/product.css);
+
+html {
+    scroll-behavior: smooth;
+    }
+
+.mobile{
+    display: none;
+}
+
+.hover-button   {
+    transition:  opacity 1s ease-out, visibility 1s ease-out;
+}
+
+ .hover-button:hover{
+    opacity: 0.6;
+
+ }
+ .hover-button:hover img{
+    opacity: 0.6;
+    visibility: visible;
+ }
+.button-back{
+    width: 164px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    color: var(--ui-dark-brown, #503A27);
+/* Body */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.16px;
+margin-bottom: 24px;
+
+}
+
+ .accordion_opened{
+    padding-left: 12px;
+padding-top: 8px;
+padding-bottom: 8px;
+height: 100%;
+visibility: visible;
+opacity: 1;
+transition:  opacity .2s linear, visibility .2s linear;
+
+}
+
+@media screen and (max-width: 740px){
+    .mobile{
+        display: block;
+    }
+}

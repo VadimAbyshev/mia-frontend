@@ -1,0 +1,5 @@
+.body{
+    background: var(--background-light-brown, #F8F5EE);
+    margin: 0 ;
+    font-family:  'Manrope', Arial, Helvetica, sans-serif;
+}

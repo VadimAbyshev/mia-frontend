@@ -1,0 +1,218 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    width: 322px;
+    margin-left: 110px;
+    margin-top: 88px;
+}
+.categories__title{
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--text-black, #503A27);
+/* H3 */
+font-family: STIX Two Text;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 100% */
+letter-spacing: 0.32px;
+}
+.categories__button-title{
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--text-black, #503A27);
+    /* H3 */
+    font-family: STIX Two Text;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 100% */
+    letter-spacing: 0.32px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+    }
+
+.categories__list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 4px;
+}
+.categories__button{
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    width: 322px;
+    justify-content: space-between;
+    cursor: pointer;
+
+    color: var(--ui-dark-brown, #503A27);
+/* Body */
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.16px;
+}
+.categories__image{
+    visibility: hidden;
+
+}
+.categories__links{
+    list-style-type: none;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    
+}
+.categories__link{
+
+color: var(--ui-dark-brown, #503A27);
+text-decoration: solid;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.16px;
+text-decoration: none;
+
+}
+
+/* Навигация */
+.categories__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.categories__image-cat{
+    visibility: visible;
+}
+.categories__button-cat{
+    width: 210px;
+    justify-content: start;
+}
+
+.categories__links-nav {
+    position: absolute;
+    z-index: 3;
+    background: #FEFAEF;
+    height: 110px;
+    padding: 0;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 16px;
+
+}
+.categories__links-nav_discount{
+    width: 150px;
+    height: 55px;
+}
+.catalog{
+    display: flex;
+    flex-direction: row;
+}
+.categories__image-cat_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1465px){
+.categories{
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.categories{
+    width: 252px;
+}
+.categories__button{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1135px){
+    .categories{
+        margin-left: 60px;
+        margin-top: 80px;
+    }
+
+    .categories{
+        width: 218px;
+    }
+    .categories__button {
+
+        text-align: start;
+    }
+    .categories__list{
+       align-items: start;
+    }
+
+    }
+
+    @media screen and (max-width: 1024px){
+        .categories{
+            margin-left: 40px;
+        }
+    }
+
+    @media screen and (max-width: 950px){
+        .categories{
+            margin-left: 32px;
+        }
+    }
+    @media screen and (max-width: 690px){
+        .catalog{
+            flex-direction: column;
+            width: 100%;
+        }
+        .categories__list{
+            margin-top: 10px;
+            visibility: hidden;
+            padding: 0;
+            margin-bottom: 0;
+            margin-left: 7px;
+            height: 0;
+       
+        }
+        .categories__nav{
+            flex-direction: column;
+            gap: 16px;
+        }
+        .categories {
+            margin-top: 64px;
+            margin-left: 7px;
+        }
+   
+        .categories__button-title{
+            justify-content: space-between;
+            width: 344px;
+        }
+        .categories__button-cat{
+            width: 343px;
+            justify-content: space-between;
+        }
+        .categories__image-cat_mobile{
+            display: block;
+        }
+        .categories__button-title{
+            margin-bottom: 0;
+            width: 343px;
+        }
+        
+    }
+
+    

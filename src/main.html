@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./blocks/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mia</title>
+</head>
+
+<body class="body">
+  <div class="page">
+
+    <header class="header">
+
+      <div class="header__burger-menu">
+      
+        <button class="header__burger" type="button"></button>
+        <p class="header__burger-title">Меню</p>
+      </div>
+
+      <div class="header__nav">
+
+        <ul class="header__links">
+          <li class="header__link"><a href="../src/main.html" class="header__link-element">Каталог</a></li>
+          <li class="header__link"><a href="#" class="header__link-element">О нас</a></li>
+          <li class="header__link"><a href="#" class="header__link-element">Доставка и оплата</a></li>
+          <li class="header__link"><a href="#" class="header__link-element">Контакты</a></li>
+          <li class="header__link"><a href="#" class="header__link-element mobile">Избранное</a></li>
+        </ul>
+      </div>
+
+      <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
+
+      <div class="header__buttons">
+        <button class="header__search-button"></button>
+        <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
+      <label class="button__shop-label">
+        <button class="header__shop-button"></button>
+        <span class="header__shop-button_span">21</span>
+      </label>
+      </div>
+
+    </header>
+
+    
+    <main class="catalog">
+      <section class="categories">
+        <button class="categories__button-title hover-button accordion-button">Категории <img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image categories__image-cat categories__image-cat_mobile"> </button> 
+        
+
+      
+        
+        <ul class="categories__list accordion">
+          <li class="categories__list-element">
+            <button class="categories__button hover-button accordion-button" type="button">Новинки<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button>
+          <ul class='categories__links accordion'>
+            <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+            <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+            <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+          </ul>
+        
+        </li>
+
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Блузки и рубашки <img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button>
+            <ul class='categories__links accordion'>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+            </ul>
+          </li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Верхняя одежда <img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button>
+            <ul class='categories__links accordion'>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+            </ul>
+          </li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Джинсы<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button>
+            <ul class='categories__links accordion'>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">Джинсы</a></li>
+            </ul>
+          </li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Свитера и кардиганы<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Нижнее белье<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Юбки<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Топы и майки<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Платья и сарафаны<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Шорты<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Домашняя одежда<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Боди<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Купильники и пляжная одежда<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Комбинезоны<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Туники<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Футболки и поло<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Худи и свитшоты<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+          <li class="categories__list-element"><button class="categories__button hover-button accordion-button" >Спортивные костюмы<img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image"></button></li>
+
+        </ul>
+      </section>
+
+      <section class="favorites favorites-main">
+      
+        <div class="categories__nav">
+          <div class="categories__nav-list">
+          <button class="categories__button  categories__button-cat hover-button accordion-button" >Размер одежды <img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image categories__image-cat"></button>
+            <ul class='categories__links categories__links-nav accordion'>
+              <li class="categories__links-element"><a class="categories__link" href="#">S</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">M</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">XS</a></li>
+              <li class="categories__links-element"><a class="categories__link" href="#">XXL</a></li>
+            </ul>
+          </div>
+
+          <div class="categories__nav-list">
+            <button class="categories__button  categories__button-cat hover-button accordion-button" >Сортировка по скидке <img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image categories__image-cat"></button>
+              <ul class='categories__links categories__links-nav categories__links-nav_discount accordion'>
+                <li class="categories__links-element"><a class="categories__link" href="#">По возрастанию</a></li>
+                <li class="categories__links-element"><a class="categories__link" href="#">По убыванию</a></li>
+              
+              </ul>
+            </div>
+
+        </div>
+
+        <div class="favorites__grid favorites__grid-main">
+
+          <a class="favorites__element" href="../src/product.html">
+
+            <span class="favorites__span">SALE</span>
+            <button class="favorites__button-like"></button>
+            <img class="favorites__image favorites__image-main" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+          
+          <a class="favorites__element" href="#">
+
+            <span class="favorites__span">SALE</span>
+            <button class="favorites__button-like"></button>
+            <img class="favorites__image favorites__image-main" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+          <a class="favorites__element" href="#">
+
+            <span class="favorites__span">SALE</span>
+            <button class="favorites__button-like"></button>
+            <img class="favorites__image favorites__image-main" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+          <a class="favorites__element" href="#">
+
+            <span class="favorites__span">SALE</span>
+            <button class="favorites__button-like"></button>
+            <img class="favorites__image favorites__image-main" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+          <a class="favorites__element" href="#">
+
+            <span class="favorites__span">SALE</span>
+            <button class="favorites__button-like"></button>
+            <img class="favorites__image favorites__image-main" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+          <a class="favorites__element" href="#">
+
+            <span class="favorites__span">SALE</span>
+            <button class="favorites__button-like"></button>
+            <img class="favorites__image favorites__image-main" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+
+
+        </div>
+      </section>
+
+      
+    </main>
+
+
+
+
+
+    <footer class="footer">
+
+ 
+
+    </footer>
+  </div>
+
+
+
+
+
+ 
+
+  <script src="./scripts/swiper.js"></script>
+  <script src="./pages/index.js"></script>
+</body>
+
+</html>
