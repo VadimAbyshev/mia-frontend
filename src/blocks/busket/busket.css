@@ -1,3 +1,9 @@
+.orders{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .basket{
     width: 1366px;
     margin-top: 80px;
@@ -354,6 +360,7 @@ letter-spacing: 0.16px;
             align-items: center;
             width: 944px;
         }
+    
         .checkout{
             margin-left: auto;
             margin-right: auto;
