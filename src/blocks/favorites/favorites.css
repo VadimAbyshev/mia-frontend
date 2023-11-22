@@ -1,7 +1,12 @@
 .favorites{
-    margin: 105px auto 0;
+    margin: 88px auto 0;
     max-width: 1360px;
 }
+.favorites-main{
+    margin: 88px auto 0;
+    max-width: 1360px;
+}
+
 .favorites__title{
     color: var(--text-black, #503A27);
 
@@ -17,10 +22,11 @@ letter-spacing: 0.32px;
     position: relative;
     text-decoration: none;
    
-}
+}   
 .favorites__image{
     width: 322px;
 height: 400px;
+object-fit: cover;
 }
 .favorites__span{
     

@@ -72,8 +72,10 @@ letter-spacing: 0.16px;
     display: flex;
     flex-direction: column;
     opacity: 0;
-    visibility: hidden;
-    height: 0;
+    display: none;
+    height: 100%;
+    padding: 0;
+    padding-left: 10px;
     
 }
 .categories__link{
@@ -114,8 +116,7 @@ text-decoration: none;
     align-items: center;
     text-align: center;
     margin: 0;
-    margin-top: 8px;
-    margin-left: 16px;
+    margin-top: 10px;
 
 }
 .categories__links-nav_discount{
@@ -139,9 +140,7 @@ text-decoration: none;
 .categories{
     width: 252px;
 }
-.categories__button{
-    width: 100%;
-}
+
 }
 
 @media screen and (max-width: 1135px){
@@ -181,11 +180,11 @@ text-decoration: none;
         }
         .categories__list{
             margin-top: 10px;
-            visibility: hidden;
+            display: none;
             padding: 0;
             margin-bottom: 0;
             margin-left: 7px;
-            height: 0;
+            height: 100%;
        
         }
         .categories__nav{
