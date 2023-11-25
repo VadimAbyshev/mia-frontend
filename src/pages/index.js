@@ -75,12 +75,7 @@ accordionOpenButton.forEach((elem)=>{
 
 
 
-  if (window.innerWidth > 450) {
-    accordionOpenTitleButton.disabled = true;
-  } else {
-    accordionOpenTitleButton.disabled = false;
-  }
- 
+
 
 
 burgerButton.addEventListener('click', openBurgerMenu)
@@ -102,3 +97,29 @@ function closeSearch(){
 
 openSearchButton.addEventListener('click', openSearch)
 closeSearchButton.addEventListener('click', closeSearch)
+
+
+// openSearchButton.forEach((elem)=>{
+//   elem.addEventListener('click',()=>{
+ 
+//       elem.parentNode.querySelector('.header__form').classList.add('open-search')
+
+//   })
+// })
+
+// closeSearchButton.forEach((elem)=>{
+//   elem.addEventListener('click',()=>{
+ 
+//       elem.parentNode.querySelector('.header__form').classList.remove('open-search')
+
+//   })
+// })
+
+
+if(accordionOpenTitleButton){
+if (window.innerWidth > 690) {
+  accordionOpenTitleButton.disabled = true;
+} else {
+  accordionOpenTitleButton.disabled = false;
+}
+}

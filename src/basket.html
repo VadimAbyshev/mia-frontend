@@ -14,35 +14,44 @@
 
     <header class="header">
 
-      <div class="header__burger-menu">
-      
-        <button class="header__burger" type="button"></button>
-        <p class="header__burger-title">Меню</p>
+      <div class="header__info">
+        <div class="header__burger-menu">
+        
+          <button class="header__burger" type="button"></button>
+          <p class="header__burger-title">Меню</p>
+        </div>
+  
+        <div class="header__nav">
+  
+          <ul class="header__links">
+            <li class="header__link"><a href="../src/main.html" class="header__link-element">Каталог</a></li>
+            <li class="header__link"><a href="#" class="header__link-element">О нас</a></li>
+            <li class="header__link"><a href="#" class="header__link-element">Доставка и оплата</a></li>
+            <li class="header__link"><a href="#" class="header__link-element">Контакты</a></li>
+            <li class="header__link"><a href="#" class="header__link-element mobile">Избранное</a></li>
+          </ul>
+        </div>
+  
+        <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
+  
+        <div class="header__buttons">
+          <button class="header__search-button open-search"></button>
+          <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
+        <label class="button__shop-label">
+          <button class="header__shop-button "onclick="document.location='../src/basket.html'"></button>
+          <span class="header__shop-button_span">21</span>
+        </label>
+        </div>
+  
       </div>
-
-      <div class="header__nav">
-
-        <ul class="header__links">
-          <li class="header__link"><a href="../src/main.html" class="header__link-element">Каталог</a></li>
-          <li class="header__link"><a href="#" class="header__link-element">О нас</a></li>
-          <li class="header__link"><a href="#" class="header__link-element">Доставка и оплата</a></li>
-          <li class="header__link"><a href="#" class="header__link-element">Контакты</a></li>
-          <li class="header__link"><a href="#" class="header__link-element mobile">Избранное</a></li>
-        </ul>
-      </div>
-
-      <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
-
-      <div class="header__buttons">
-        <button class="header__search-button"></button>
-        <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
-      <label class="button__shop-label">
-        <button class="header__shop-button "onclick="document.location='../src/basket.html'"></button>
-        <span class="header__shop-button_span">21</span>
-      </label>
-      </div>
-
-    </header>
+        <form class="header__form">
+  
+          <input type="search" id="search" name="header-search" class="header__input"  required="" minlength="3" maxlength="40" value="" placeholder="Поиск">
+          <button class="header__button__close-search close-search" type="button"></button>
+  
+        </form>
+  
+      </header>
 
    <main class="orders">
     <div class="basket">
