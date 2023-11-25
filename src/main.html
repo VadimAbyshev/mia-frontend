@@ -14,6 +14,7 @@
 
     <header class="header">
 
+    <div class="header__info">
       <div class="header__burger-menu">
       
         <button class="header__burger" type="button"></button>
@@ -34,13 +35,21 @@
       <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
 
       <div class="header__buttons">
-        <button class="header__search-button"></button>
+        <button class="header__search-button open-search"></button>
         <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
       <label class="button__shop-label">
         <button class="header__shop-button "onclick="document.location='../src/basket.html'"></button>
         <span class="header__shop-button_span">21</span>
       </label>
       </div>
+
+    </div>
+      <form class="header__form">
+
+        <input type="search" id="search" name="header-search" class="header__input "  required="" minlength="3" maxlength="40" value="" placeholder="Поиск">
+        <button class="header__button__close-search close-search" type="button"></button>
+
+      </form>
 
     </header>
 

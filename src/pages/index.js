@@ -89,4 +89,16 @@ burgerButton.addEventListener('click', openBurgerMenu)
 const acc = document.querySelectorAll('.accordion');
 
 
+const searchInput = document.querySelector('.header__form')
+const openSearchButton = document.querySelector('.open-search')
+const closeSearchButton = document.querySelector('.close-search')
 
+function openSearch(){
+  searchInput.classList.add('open-search')
+}
+function closeSearch(){
+  searchInput.classList.remove('open-search')
+}
+
+openSearchButton.addEventListener('click', openSearch)
+closeSearchButton.addEventListener('click', closeSearch)

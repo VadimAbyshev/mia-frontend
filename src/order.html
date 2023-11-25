@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./blocks/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Mia</title>
+</head>
+
+<body class="body">
+    <div class="page">
+
+        <header class="header">
+
+            <div class="header__burger-menu">
+
+                <button class="header__burger" type="button"></button>
+                <p class="header__burger-title">Меню</p>
+            </div>
+
+            <div class="header__nav">
+
+                <ul class="header__links">
+                    <li class="header__link"><a href="../src/main.html" class="header__link-element">Каталог</a></li>
+                    <li class="header__link"><a href="#" class="header__link-element">О нас</a></li>
+                    <li class="header__link"><a href="#" class="header__link-element">Доставка и оплата</a></li>
+                    <li class="header__link"><a href="#" class="header__link-element">Контакты</a></li>
+                    <li class="header__link"><a href="#" class="header__link-element mobile">Избранное</a></li>
+                </ul>
+            </div>
+
+            <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
+
+            <div class="header__buttons">
+                <button class="header__search-button"></button>
+                <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
+                <label class="button__shop-label">
+                    <button class="header__shop-button " onclick="document.location='../src/basket.html'"></button>
+                    <span class="header__shop-button_span">21</span>
+                </label>
+            </div>
+
+        </header>
+
+        <main class="orders">
+            <div class="basket">
+
+                <section class="details">
+
+                    <form class="details__form" action="#">
+
+                        <div class="contacts">
+
+                            <div class="client">
+                                <h1 class="client__title">Контактные данные</h1>
+                                <div class="client__inputs">
+                                    <input type="text" id="name" name="name" class="client__input" placeholder="ФИО"
+                                        required="" minlength="2" maxlength="40" value="">
+                                    <input type="tel" id="telephone" name="PHONE" class="client__input"
+                                        placeholder="Номер телефона" required="" minlength="11" maxlength="16">
+                                    <input type="email" pattern="^\S+@\S+\.\S+$" id="email" name="email"
+                                        class="client__input" placeholder="Email" required="" minlength="11"
+                                        maxlength="16" value="">
+
+                                </div>
+                            </div>
+
+
+                            <div class="delivery">
+                                <h2 class="delivery__title">Способ доставки</h2>
+                                <div class="delivery__inputs">
+
+                                    <select class="client__input client__select">
+                                        <option class="client__option">СДЭК</option>
+                                        <option class="client__option">Почта России</option>
+                                        <option class="client__option">Яндекс.Доставка</option>
+                                        <option class="client__option">ПЭК</option>
+                                    </select>
+
+                                    <input type="text" id="name" name="name" class="client__input" placeholder="ФИО"
+                                        required="" minlength="2" maxlength="40" value="">
+                                    <input type="tel" id="telephone" name="PHONE" class="client__input"
+                                        placeholder="Номер телефона" required="" minlength="11" maxlength="16" value="">
+                                    <input type="email" pattern="^\S+@\S+\.\S+$" id="email" name="email"
+                                        class="client__input" placeholder="Email" required="" minlength="11"
+                                        maxlength="16" value="">
+                                </div>
+                            </div>
+
+                            <div class="payment">
+                                <h2 class="payment__title">Способ оплаты</h2>
+
+                                <div class="client__inputs">
+
+                                    <div class="payment__checkbox">
+
+                                        <div class=" payment__inputs"> <label class="payment__label"
+                                                for="cash">Наличными при получении</label> <input type="radio"
+                                                id="cash" name="payment" class="payment__input" required="">
+                                        </div>
+                                        <p class="payment__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                                            aut odit aut fugit, sed quia </p>
+
+                                    </div>
+                                    <div class="payment__checkbox">
+
+                                        <div class=" payment__inputs"> <label class="payment__label" for="сard">Онлайн
+                                                оплата</label> <input type="radio" id="сard" name="payment"
+                                                class="payment__input" required="">
+                                        </div>
+                                        <p class="payment__text">Neque porro quisquam est, qui dolorem ipsum quia dolor
+                                            sit amet, consectetur, adipisci velit, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="order">
+                            <h2 class="order__title">Ваш заказ</h2>
+                            <ul class="order__list">
+                                <li class="order__element">
+                                    <p class="order__name">LT 01 Shades Nubuck Desert Taupe</p><span
+                                        class="order__price">3 000 ₽</span>
+                                </li>
+                                <li class="order__element">
+                                    <p class="order__name">LT 01 Shades Nubuck Desert Taupe</p><span
+                                        class="order__price">3 000 ₽</span>
+                                </li>
+                                <li class="order__element">
+                                    <p class="order__name">LT 01 Shades Nubuck Desert Taupe</p><span
+                                        class="order__price">3 000 ₽</span>
+                                </li>
+
+                            </ul>
+                            <p class="order__total">Итого</p>
+                            <span class="order__total-span">125 000₽</span>
+                            <button class="order__button">Оформить заказ</button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+
+            </div>
+        </main>
+
+
+
+
+
+        <footer class="footer">
+
+
+
+        </footer>
+    </div>
+
+
+
+
+
+
+
+    <script src="./scripts/swiper.js"></script>
+    <script src="./pages/index.js"></script>
+</body>
+
+</html>

@@ -7,6 +7,7 @@
 @import url(../blocks/categories/categories.css);
 @import url(../blocks/product/product.css);
 @import url(../blocks/busket/busket.css);
+@import url(../blocks/order/order.css);
 
 html {
     scroll-behavior: smooth;

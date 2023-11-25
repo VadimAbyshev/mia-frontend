@@ -1,8 +1,7 @@
 .page{
 background: var(--background-light-brown, #F8F5EE);
-    margin: 0 auto;
     color: #000000;
-    max-width: 1900px;
-    
+    max-width: 1900px  ;
+    margin-top: 0;
   
 }

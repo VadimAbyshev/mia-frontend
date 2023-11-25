@@ -158,6 +158,7 @@ margin: 0;
         width: 466px;
 
     }
+   
 
     .favorites{
         max-width: 500px;
@@ -199,9 +200,7 @@ margin: 0;
 .favorites__image-main{
     margin-bottom: 16px;
 }
-.favorites-main{
-    margin-top: 88px;
-}
+
 @media screen and (max-width: 1800px){
 .favorites-main{
     width: 1014px;
@@ -270,6 +269,9 @@ margin: 0;
         .favorites-main{
             max-width: 470px;
             width: 100%;
+        }
+        .favorites-main{
+            margin-top: 24px;
         }
         
     }
