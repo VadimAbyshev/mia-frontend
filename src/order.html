@@ -15,43 +15,45 @@
         <header class="header">
 
             <div class="header__info">
-              <div class="header__burger-menu">
-              
-                <button class="header__burger" type="button"></button>
-                <p class="header__burger-title">Меню</p>
-              </div>
-        
-              <div class="header__nav">
-        
-                <ul class="header__links">
-                  <li class="header__link"><a href="../src/main.html" class="header__link-element">Каталог</a></li>
-                  <li class="header__link"><a href="#" class="header__link-element">О нас</a></li>
-                  <li class="header__link"><a href="#" class="header__link-element">Доставка и оплата</a></li>
-                  <li class="header__link"><a href="#" class="header__link-element">Контакты</a></li>
-                  <li class="header__link"><a href="#" class="header__link-element mobile">Избранное</a></li>
-                </ul>
-              </div>
-        
-              <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
-        
-              <div class="header__buttons">
-                <button class="header__search-button open-search"></button>
-                <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
-              <label class="button__shop-label">
-                <button class="header__shop-button "onclick="document.location='../src/basket.html'"></button>
-                <span class="header__shop-button_span">21</span>
-              </label>
-              </div>
-        
+                <div class="header__burger-menu">
+
+                    <button class="header__burger" type="button"></button>
+                    <p class="header__burger-title">Меню</p>
+                </div>
+
+                <div class="header__nav">
+
+                    <ul class="header__links">
+                        <li class="header__link"><a href="../src/main.html" class="header__link-element">Каталог</a>
+                        </li>
+                        <li class="header__link"><a href="#" class="header__link-element">О нас</a></li>
+                        <li class="header__link"><a href="#" class="header__link-element">Доставка и оплата</a></li>
+                        <li class="header__link"><a href="#" class="header__link-element">Контакты</a></li>
+                        <li class="header__link"><a href="#" class="header__link-element mobile">Избранное</a></li>
+                    </ul>
+                </div>
+
+                <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
+
+                <div class="header__buttons">
+                    <button class="header__search-button open-search"></button>
+                    <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
+                    <label class="button__shop-label">
+                        <button class="header__shop-button " onclick="document.location='../src/basket.html'"></button>
+                        <span class="header__shop-button_span">21</span>
+                    </label>
+                </div>
+
             </div>
-              <form class="header__form">
-        
-                <input type="search" id="search" name="header-search" class="header__input"  required="" minlength="3" maxlength="40" value="" placeholder="Поиск">
+            <form class="header__form">
+
+                <input type="search" id="search" name="header-search" class="header__input" required="" minlength="3"
+                    maxlength="40" value="" placeholder="Поиск">
                 <button class="header__button__close-search close-search" type="button"></button>
-        
-              </form>
-        
-            </header>
+
+            </form>
+
+        </header>
 
         <main class="orders">
             <div class="basket">
@@ -70,8 +72,8 @@
                                     <input type="tel" id="telephone" name="PHONE" class="client__input"
                                         placeholder="Номер телефона" required="" minlength="11" maxlength="16">
                                     <input type="email" pattern="^\S+@\S+\.\S+$" id="email" name="email"
-                                        class="client__input" placeholder="Email" required="" minlength="11"
-                                        maxlength="16" value="">
+                                        class="client__input client__long" placeholder="Email" required=""
+                                        minlength="11" maxlength="16" value="">
 
                                 </div>
                             </div>
@@ -88,15 +90,27 @@
                                         <option class="client__option">ПЭК</option>
                                     </select>
 
-                                    <input type="text" id="name" name="name" class="client__input" placeholder="ФИО"
+                                    <input type="text" id="city" name="city" class="client__input" placeholder="Город"
                                         required="" minlength="2" maxlength="40" value="">
-                                    <input type="tel" id="telephone" name="PHONE" class="client__input"
-                                        placeholder="Номер телефона" required="" minlength="11" maxlength="16" value="">
-                                    <input type="email" pattern="^\S+@\S+\.\S+$" id="email" name="email"
-                                        class="client__input" placeholder="Email" required="" minlength="11"
-                                        maxlength="16" value="">
+
+                                    <input type="text" id="Street" name="Street" class="client__input"
+                                        placeholder="Улица" required="" minlength="11" maxlength="16" value="">
+
+
+                                    <input type="text" id="house" name="house" class="client__input" placeholder="Дом"
+                                        required="" minlength="11" maxlength="16" value="">
+
+                                    <input type="text" id="apartment" name="apartment" class="client__input"
+                                        placeholder="Квартира" required="" minlength="11" maxlength="16" value="">
+
+
                                 </div>
                             </div>
+
+
+
+
+
 
                             <div class="payment">
                                 <h2 class="payment__title">Способ оплаты</h2>
@@ -106,8 +120,8 @@
                                     <div class="payment__checkbox">
 
                                         <div class=" payment__inputs"> <label class="payment__label"
-                                                for="cash">Наличными при получении</label> <input type="radio"
-                                                id="cash" name="payment" class="payment__input" required="">
+                                                for="cash">Наличными при получении</label> <input type="radio" id="cash"
+                                                name="payment" class="payment__input" required="">
                                         </div>
                                         <p class="payment__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                                             aut odit aut fugit, sed quia </p>
@@ -147,6 +161,26 @@
                                 </li>
 
                             </ul>
+
+                            <div class="services">
+                                <div class="services__texts">
+                                    <p class="services__text">Cумма</p>
+                                <p class="services__price">3 000 ₽</p>
+                             </div>
+
+                             <div class="services__texts">
+                                <p class="services__text">Доставка</p>
+                                <p class="services__price">3 000 ₽</p>
+                             </div>
+
+                             <div class="services__texts">
+                                <p class="services__text">Скидка</p>
+                                <p class="services__price">3 000 ₽</p>
+
+                             </div>
+
+                            </div>
+
                             <p class="order__total">Итого</p>
                             <span class="order__total-span">125 000₽</span>
                             <button class="order__button">Оформить заказ</button>
