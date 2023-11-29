@@ -62,8 +62,16 @@ const accordionCatMobile = document.querySelector('.accordion-mobile');
 const accordionOpenTitleButton = document.querySelector('.categories__button-title');
 
 
+const accordionProductButton = document.querySelectorAll('.product__details-button')
 
+accordionProductButton.forEach((elem)=>{
+  elem.addEventListener('click',()=>{
+ 
+      elem.parentNode.querySelector('.accordion').classList.toggle('accordion_opened')
+      elem.parentNode.querySelector('.product__details-button').classList.toggle('product__details-button-active')
 
+  })
+})
 
 accordionOpenButton.forEach((elem)=>{
   elem.addEventListener('click',()=>{

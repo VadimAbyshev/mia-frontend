@@ -4,27 +4,28 @@
     max-width: 1760px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 80px;
 }
 
 .product{
     display: flex;
     flex-direction: row;
-    margin-top: 24px;
     max-width:  100%;
     margin-right: auto;
     margin-left: auto;
     box-sizing: content-box;
+    gap: 24px;
 }
 .product__swiper{
     display: flex;
     flex-direction: column;
     height: 796px;
     overflow: hidden;
-    margin-top: 24px;
 }
 .product__images{
     display: flex;
     flex-direction: row;
+    margin-top: 24px;
 }
 .swiper__list-images{
     width: 91px;
@@ -33,9 +34,7 @@
     flex-direction: column;
     margin-right: 24px;
 }
-.swipe__images{
-    margin-right: 24px;
-}
+
 .product__list-image{
     width: 91px;
     height: 94px;
@@ -43,4 +42,285 @@
 .product__image{
     width: 784px;
     height: 796px;
+}
+
+.product__info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    width: 437px;
+}
+
+.product__span-title{
+    color: var(--text-black, #503A27);
+
+/* Caption flag */
+font-family: Manrope;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 218.182% */
+letter-spacing: 0.22px;
+text-transform: uppercase;
+}
+
+.product__title{
+    margin: 0;
+    margin-top: 8px;
+    color: var(--text-black, #503A27);
+max-width: 322px;
+font-family: STIX Two Text;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 100% */
+letter-spacing: 0.32px;
+}
+
+.product__price{
+    margin: 0;
+    margin-top: 8px;
+    color: var(--text-gray, #575451);
+
+/* Body */
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.16px;
+}
+.product__button-color{
+border-radius: 32px;
+    border: 1px solid var(--ui-brown, #654E3A);
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 8px;
+}
+.product__buttons-color{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 48px;
+}
+
+.product__color-subtitle{
+    margin: 0;
+    color: var(--text-gray, #575451);
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.16px;
+}
+
+.product__butons-size{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.product__options{
+    border: 1px solid var(--border-light-bronw, #BAADA1);
+    background-color: transparent;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    cursor: pointer;
+    appearance: none;
+    background: url(../../images/selectStrelka.svg) no-repeat right;
+    background-position-x: calc(100% - 24px);
+
+    color: var(--ui-dark-brown, #503A27);
+
+/* Body Button */
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.14px;
+text-transform: uppercase;
+}
+
+.product__button-size__add{
+    display: flex;
+
+justify-content: center;
+align-items: center;
+color: var(--text-white, #FAF7F0);
+
+/* Body Button */
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.14px;
+text-transform: uppercase;
+width: 373px;
+background: var(--ui-dark-brown, #503A27);
+height: 56px;
+border: none;
+cursor: pointer;
+}
+.product__buttons-size__save{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+    gap: 8px;
+
+}
+
+.product__button-size__like{
+background-image: url(../../images/likeProduct.svg);
+background-repeat: no-repeat;
+background-position: center;
+border: 1px solid var(--border-light-bronw, #BAADA1);
+width: 56px;
+height: 56px;
+background-color: transparent;
+cursor: pointer;
+}
+
+.product__info-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    gap: 16px;
+}
+
+.product__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.product__details-text{
+    color: var(--text-black, #503A27);
+
+/* Body */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.16px;
+margin: 0;
+margin-top: 16px;
+display: none;
+}
+
+.product__details-button{
+    border: none;
+    border-bottom: 1px solid var(--border-light-bronw, #BAADA1);
+    padding: 0;
+    padding-bottom: 16px;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    background-image: url(../../images/strelkaProduct1.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+    color: var(--ui-dark-brown, #503A27);
+
+/* Body Button */
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.14px;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+.product__details-button-active{
+    background-image: url(../../images/strelkaProduct2.svg);
+    border-bottom: 1px solid var(--border-brown, #654E3A);
+
+}
+
+.product__details{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.product__details-title{
+    margin: 0;
+    color: var(--text-black, #503A27);
+
+/* H4 */
+font-family: STIX Two Text;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 116.667% */
+letter-spacing: 0.24px;
+}
+
+.product__info-details__title{
+    margin: 0;
+    color: var(--text-black, #503A27);
+
+/* H4 */
+font-family: STIX Two Text;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 116.667% */
+letter-spacing: 0.24px;
+}
+
+.product__info-details__texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.product__info-details__text{
+    margin: 0;
+    color: var(--text-black, #503A27);
+
+/* Body */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.16px;
+}
+
+.analogic{
+    display: flex;
+    flex-direction: column;
+    width: 1360px;
+    margin: 80px auto;
+}
+
+.analogic__swiper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+    overflow: hidden;
+}
+
+.analogic__title{
+    color: var(--text-black, #503A27);
+
+/* H3 */
+font-family: STIX Two Text;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 100% */
+letter-spacing: 0.32px;
 }

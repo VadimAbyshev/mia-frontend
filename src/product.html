@@ -58,36 +58,7 @@
 
       <section class="product">
 
-        <!-- <div class="product__swiper">
-
-          <div class="swiper swiper__list-images">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide silde__list-image"><img class="product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-              <div class="swiper-slide silde__list-image"><img class="product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-              <div class="swiper-slide silde__list-image"><img class="product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-            </div>
-                      
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-            <div class="swiper-scrollbar"></div>
-          </div>
-
-
-          <div class="swiper swipe__images">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-              <div class="swiper-slide"><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-              <div class="swiper-slide"><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-            </div>
-                      
-            <div class="swiper-scrollbar"></div>
-          </div>
-
-
-
-
-        </div> -->
+  
 
         <div class="product__swiper">
           <button class="button-back" type="button" onclick="history.back();">Вернуться назад</button>
@@ -135,7 +106,6 @@
 
 
 
-
           <div class="product__colors">
             <div class="product__buttons-color">
 
@@ -150,18 +120,30 @@
 
           </div>
 
-          <p class="product__color-subtitle">Цвет Черный</p>
+          <span class="product__color-subtitle">Цвет: Черный</span>
 
 
           </div>
 
           <div class="product__butons-size">
-            <button class="product__button-size__accordion" type="button">Выбор размера</button>
+          <select class="product__options" type="button">
+            <option class="product__option">Выбор размера</option>
+
+            <option class="product__option">XS</option>
+            <option class="product__option">XXS</option>
+            <option class="product__option">BigSize</option>
+          </select>
 
             <div class="product__buttons-size__save">
-              <button class="product__button-size__save" type="submit">Добавить в корзину</button>
+              <button class="product__button-size__add" type="submit">Добавить в корзину</button>
               <button class="product__button-size__like" type="submit"></button>
             </div>
+
+          </div>
+
+
+
+
 
 
             <div class="product__info-details">
@@ -178,13 +160,98 @@
             
             </div>
 
+            <div class="product__details">
 
+              <h2 class="product__details-title">Подробности</h2>
+
+              <div class="product__details-info">
+                <button class="product__details-button " type="button">Состав и уход</button>
+                <p class="product__details-text accordion">
+                  Легкие вязаные брюки для дней, когда хочется расслабиться. Дополните их джемпером и футболкой или уютным худи из нашей коллекции. Мы выбрали для брюк шелковистую пряжу из вискозы и небольшого количества искусственных волокон: благодаря такому составу гладкий трикотаж приятно облегает ноги, меньше мнется и сохраняет прочность после стирок.
+                </p>
+              </div>
+
+              <div class="product__details-info">
+                <button class="product__details-button " type="button">Обмеры и описание</button>
+                <p class="product__details-text accordion">
+                  Легкие вязаные брюки для дней, когда хочется расслабиться. Дополните их джемпером и футболкой или уютным худи из нашей коллекции. Мы выбрали для брюк шелковистую пряжу из вискозы и небольшого количества искусственных волокон: благодаря такому составу гладкий трикотаж приятно облегает ноги, меньше мнется и сохраняет прочность после стирок.
+                </p>
+              </div>
+            
+            </div>
 
           </div>
 
 
         </div>
 
+      </section>
+
+
+      <section class="analogic">
+      <h2 class="analogic__title">Вам может понравиться</h2>
+      <div class="analogic__swiper">
+
+        <a class="favorites__element" href="#">
+
+          <button class="favorites__button-like"></button>
+          <img class="favorites__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+          <div class="favorites__info">
+            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+            <p class="favorites__info-subtitle">5500 ₽</p>
+          </div>
+
+        </a>
+
+        
+        <a class="favorites__element" href="#">
+
+          <button class="favorites__button-like"></button>
+          <img class="favorites__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+          <div class="favorites__info">
+            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+            <p class="favorites__info-subtitle">5500 ₽</p>
+          </div>
+
+        </a>
+        <a class="favorites__element" href="#">
+
+          <button class="favorites__button-like"></button>
+          <img class="favorites__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+          <div class="favorites__info">
+            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+            <p class="favorites__info-subtitle">5500 ₽</p>
+          </div>
+
+        </a>
+
+        <a class="favorites__element" href="#">
+
+          <button class="favorites__button-like"></button>
+          <img class="favorites__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+          <div class="favorites__info">
+            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+            <p class="favorites__info-subtitle">5500 ₽</p>
+          </div>
+
+        </a>
+        <a class="favorites__element" href="#">
+
+          <button class="favorites__button-like"></button>
+          <img class="favorites__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+          <div class="favorites__info">
+            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+            <p class="favorites__info-subtitle">5500 ₽</p>
+          </div>
+
+        </a>
+
+      </div>
       </section>
       
 
