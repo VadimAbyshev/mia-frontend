@@ -1,14 +1,12 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swipe__images', {
   loop: true,
   direction: 'vertical', 
+
   slidesPerView: 1, 
   spaceBetween: 32,
   mousewheel: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
+ 
+  clickable: true,
   pagination: {
     el: '.swiper-pagination',
   },
@@ -28,8 +26,7 @@ const swiper = new Swiper('.swiper', {
     },
     1700: {
       slidesPerView: 'auto',
-      spaceBetween: 150,
-      slidesPerView: 'auto',
+      spaceBetween: 5,
   }
 },
 // autoplay: {
@@ -38,7 +35,79 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+const swiper1 = new Swiper('.product__images', {
+  loop: true,
+  direction: 'vertical', 
 
+  slidesPerView: 1, 
+  spaceBetween: 32,
+  mousewheel: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  breakpoints: {// настройки для разных разрешений
+    768: {
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+    },
+    1050: {
+        slidesPerView: 1,
+        spaceBetween: 8,
+    },
+    1060: {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+    },
+    1700: {
+      slidesPerView: '4',
+
+  }
+},
+// autoplay: {
+//   delay: 1000,
+// },
+
+});
+
+const swiper2 = new Swiper('.analogic__swiper', {
+  direction: 'horizontal', 
+
+  slidesPerView: 10, 
+  mousewheel: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  clickable: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  breakpoints: {// настройки для разных разрешений
+    768: {
+        slidesPerView: 'auto',
+        spaceBetween: 8
+    },
+    1050: {
+        slidesPerView: 1,
+        spaceBetween: 8
+    },
+    1060: {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+    },
+    1700: {
+      slidesPerView: 'auto',
+      spaceBetween: 8
+
+  }
+},
+// autoplay: {
+//   delay: 1000,
+// },
+
+});
 
 const accordion = document.querySelector('.accordion');
 const accordionOpenButton = document.querySelectorAll('.accordion-button');

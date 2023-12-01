@@ -22,10 +22,36 @@
     height: 796px;
     overflow: hidden;
 }
+.product__list-element{
+    width: 91px;
+    height: 94px;
+}
+.swipe__list{
+    display: flex;
+    flex-direction: column;
+    height: 796px;
+}
+.swipe__image{
+    width: 784px;
+height: 796px;
+margin-top: 0;
+}
+.swipe__images{
+        display: flex;
+    flex-direction: column;
+    height: 796px;
+    margin-top: 24px;
+}
+
+.product__swipers{
+    display: flex;
+    flex-direction: row;
+}
 .product__images{
     display: flex;
     flex-direction: row;
     margin-top: 24px;
+    height: 400px;
 }
 .swiper__list-images{
     width: 91px;
@@ -33,6 +59,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 24px;
+    gap: 8px;
 }
 
 .product__list-image{
@@ -307,7 +334,7 @@ letter-spacing: 0.16px;
 
 .analogic__swiper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     gap: 24px;
     overflow: hidden;
@@ -323,4 +350,60 @@ font-style: normal;
 font-weight: 500;
 line-height: 32px; /* 100% */
 letter-spacing: 0.32px;
+margin: 0;
+}
+
+
+.analogic__wrapper{
+    display: flex;
+    flex-direction: row ;
+    position: relative;
+    gap: 24px;
+
+}
+.analogic__slide{
+    width: 322px;
+    position: relative;
+}
+
+.analogic__titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.analogic__swiper-buttons{
+    display: flex;
+    width: 57px;
+    align-items: center;
+}
+
+.analogic__prev{
+    display: flex;
+    position: unset;
+
+}
+.analogic__next{
+    display: flex;
+    position: unset;
+    background-image: url(../../images/nextSwiper.svg);
+    font-size: 0;
+    font-family: unset;
+    content: '';
+}
+
+.analogic__next::after{
+    content: '';
+}
+
+.analogic__prev{
+    display: flex;
+    position: unset;
+    background-image: url(../../images/prevSwiper.svg);
+    font-size: 0;
+    font-family: unset;
+    content: '';
+}
+
+.analogic__prev::after{
+    content: '';
 }

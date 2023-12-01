@@ -61,30 +61,47 @@
   
 
         <div class="product__swiper">
-          <button class="button-back" type="button" onclick="history.back();">Вернуться назад</button>
-         <div class="product__images" >
-          <div class="swiper__list-images">
-            <div class="">
-              <div class=""><img class="product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-              <div class=""><img class="product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-              <div class=""><img class="product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-            </div>
-          </div>
-          <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
-          <!-- </div> -->
 
-          <div class=" swipe__images">
-            <div class="">
-              <div class=""><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-              <div class=""><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
-              <div class=""><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+          <button class="button-back" type="button" onclick="history.back();">Вернуться назад</button>
+
+        <div class="product__swipers">
+
+
+
+          <!-- Свайпер колумн -->
+
+
+         <div class="swiper product__images" >
+          
+          <div class=" swiper-wrapper swiper__list-images">
+
+              <div class="swiper-slide product__list-element"><img class=" product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+              <div class="swiper-slide product__list-element"><img class=" product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+              <div class="swiper-slide product__list-element"><img class=" product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+              <div class="swiper-slide product__list-element"><img class=" product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+              <div class="swiper-slide product__list-element"><img class=" product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+              <div class="swiper-slide product__list-element"><img class=" product__list-image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+
+          </div>
+
+          </div>
+        <!-- Большая картинка -->
+
+
+          <div class="swiper swipe__images">
+
+            <div class="swiper-wrapper swipe__list">
+
+              <div class="swiper-slide swipe__image"><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+              <div class="swiper-slide swipe__image"><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+              <div class="swiper-slide swipe__image"><img class="product__image" alt="Изображние товара" src="../src/images/tovar.png"></div>
+
             </div>
                       
           </div>
 
         </div>
-        </div>
+      </div>
 
 
 
@@ -189,9 +206,25 @@
 
 
       <section class="analogic">
-      <h2 class="analogic__title">Вам может понравиться</h2>
-      <div class="analogic__swiper">
 
+
+
+     
+      <div class=" swiper analogic__swiper">
+
+
+        <div class="analogic__titles">
+    <h2 class="analogic__title">Вам может понравиться</h2>
+
+      <div class="analogic__swiper-buttons">
+        <div class="swiper-button-prev analogic__prev"></div>
+        <div class="swiper-button-next analogic__next"></div>
+      </div>
+    </div>
+
+<div class="swiper-wrapper analogic__wrapper">
+
+  <div class="swiper-slide analogic__slide">
         <a class="favorites__element" href="#">
 
           <button class="favorites__button-like"></button>
@@ -203,8 +236,55 @@
           </div>
 
         </a>
+      </div>
 
+
+
+      <div class="swiper-slide analogic__slide">
+        <a class="favorites__element" href="#">
+
+          <button class="favorites__button-like"></button>
+          <img class="favorites__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+          <div class="favorites__info">
+            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+            <p class="favorites__info-subtitle">5500 ₽</p>
+          </div>
+
+        </a>
+      </div>
+
+
+      <div class="swiper-slide analogic__slide">
+        <a class="favorites__element" href="#">
+
+          <button class="favorites__button-like"></button>
+          <img class="favorites__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+          <div class="favorites__info">
+            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+            <p class="favorites__info-subtitle">5500 ₽</p>
+          </div>
+
+        </a>
+      </div>
+
+
+      <div class="swiper-slide analogic__slide">
+        <a class="favorites__element" href="#">
+
+          <button class="favorites__button-like"></button>
+          <img class="favorites__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+          <div class="favorites__info">
+            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+            <p class="favorites__info-subtitle">5500 ₽</p>
+          </div>
+
+        </a>
+      </div>
         
+      <div class="swiper-slide analogic__slide">
         <a class="favorites__element" href="#">
 
           <button class="favorites__button-like"></button>
@@ -216,6 +296,8 @@
           </div>
 
         </a>
+      </div>
+      <div class="swiper-slide analogic__slide">
         <a class="favorites__element" href="#">
 
           <button class="favorites__button-like"></button>
@@ -227,7 +309,8 @@
           </div>
 
         </a>
-
+      </div>
+      <div class="swiper-slide analogic__slide">
         <a class="favorites__element" href="#">
 
           <button class="favorites__button-like"></button>
@@ -239,6 +322,8 @@
           </div>
 
         </a>
+      </div>
+      <div class="swiper-slide analogic__slide">
         <a class="favorites__element" href="#">
 
           <button class="favorites__button-like"></button>
@@ -250,8 +335,11 @@
           </div>
 
         </a>
+      </div>
+      </div>
 
       </div>
+
       </section>
       
 

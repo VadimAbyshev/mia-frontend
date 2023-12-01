@@ -21,6 +21,9 @@ letter-spacing: 0.32px;
 .favorites__element{
     position: relative;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
    
 }   
 .favorites__image{
