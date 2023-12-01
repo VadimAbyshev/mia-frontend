@@ -358,7 +358,6 @@ margin: 0;
     display: flex;
     flex-direction: row ;
     position: relative;
-    gap: 24px;
 
 }
 .analogic__slide{

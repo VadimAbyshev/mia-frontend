@@ -98,8 +98,8 @@ const swiper2 = new Swiper('.analogic__swiper', {
         slidesPerView: 'auto',
     },
     1700: {
-      slidesPerView: 'auto',
-      spaceBetween: 8
+      slidesPerView: 4,
+      spaceBetween: 24,
 
   }
 },
