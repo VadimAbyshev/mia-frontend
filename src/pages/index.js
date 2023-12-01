@@ -61,6 +61,8 @@ const swiper1 = new Swiper('.product__images', {
     },
     1700: {
       slidesPerView: '4',
+      spaceBetween: 8,
+
 
   }
 },
