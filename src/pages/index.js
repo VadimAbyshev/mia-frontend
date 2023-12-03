@@ -1,5 +1,6 @@
-const swiper = new Swiper('.swipe__images', {
+const swiper = new Swiper('.swipe__images .swiper-container', {
   loop: true,
+
   direction: 'vertical', 
 
   slidesPerView: 1, 
@@ -10,6 +11,7 @@ const swiper = new Swiper('.swipe__images', {
   pagination: {
     el: '.swiper-pagination',
   },
+  
   breakpoints: {// настройки для разных разрешений
     768: {
         slidesPerView: 'auto',
@@ -35,8 +37,7 @@ const swiper = new Swiper('.swipe__images', {
 
 });
 
-const swiper1 = new Swiper('.product__images', {
-  loop: true,
+const swiper1 = new Swiper('.product__images .swiper-container', {
   direction: 'vertical', 
 
   slidesPerView: 1, 
@@ -47,20 +48,22 @@ const swiper1 = new Swiper('.product__images', {
     el: '.swiper-pagination',
   },
   breakpoints: {// настройки для разных разрешений
-    768: {
-        slidesPerView: 'auto',
-        spaceBetween: 8,
+    300: {
+      slidesPerView: 4,
+      spaceBetween: 8,
+      direction: 'horizontal', 
+      
     },
     1050: {
-        slidesPerView: 1,
+        slidesPerView: 4,
         spaceBetween: 8,
     },
     1060: {
-        slidesPerView: 'auto',
+      slidesPerView: 4,
         spaceBetween: 20,
     },
     1700: {
-      slidesPerView: '4',
+      slidesPerView: 4,
       spaceBetween: 8,
 
 
@@ -87,12 +90,12 @@ const swiper2 = new Swiper('.analogic__swiper', {
   },
   breakpoints: {// настройки для разных разрешений
     768: {
-        slidesPerView: 'auto',
+        slidesPerView: 3,
         spaceBetween: 8
     },
     1050: {
-        slidesPerView: 1,
-        spaceBetween: 8
+        slidesPerView: 3,
+        spaceBetween: 24,
     },
     1060: {
         slidesPerView: 'auto',
