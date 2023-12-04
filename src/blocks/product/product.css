@@ -570,4 +570,8 @@ height: 400px;
 .product__button-size__add{
     width: 640px;
 }
+
+.product__details-text {
+    width: 704px;
+}
 }
