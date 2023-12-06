@@ -17,12 +17,12 @@
       <div class="header__info">
         <div class="header__burger-menu">
         
-          <button class="header__burger" type="button"></button>
+          <button class="header__burger hover-button" type="button"></button>
           <p class="header__burger-title">Меню</p>
         </div>
   
         <div class="header__nav">
-  
+          <button class="burger__close"></button>
           <ul class="header__links">
             <li class="header__link"><a href="../src/main.html" class="header__link-element">Каталог</a></li>
             <li class="header__link"><a href="#" class="header__link-element">О нас</a></li>
@@ -35,10 +35,10 @@
         <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
   
         <div class="header__buttons">
-          <button class="header__search-button open-search"></button>
-          <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
+          <button class="header__search-button open-search hover-button "></button>
+          <button class="header__like-button hover-button " onclick="document.location='../src/index.html'"></button>
         <label class="button__shop-label">
-          <button class="header__shop-button "onclick="document.location='../src/basket.html'"></button>
+          <button class="header__shop-button hover-button"onclick="document.location='../src/basket.html'"></button>
           <span class="header__shop-button_span">21</span>
         </label>
         </div>
@@ -47,7 +47,7 @@
         <form class="header__form">
   
           <input type="search" id="search" name="header-search" class="header__input"  required="" minlength="3" maxlength="40" value="" placeholder="Поиск">
-          <button class="header__button__close-search close-search" type="button"></button>
+          <button class="header__button__close-search close-search hover-button " type="button"></button>
   
         </form>
   
@@ -159,8 +159,8 @@
           </select>
 
             <div class="product__buttons-size__save">
-              <button class="product__button-size__add" type="submit">Добавить в корзину</button>
-              <button class="product__button-size__like" type="submit"></button>
+              <button class="product__button-size__add hover-button" type="submit">Добавить в корзину</button>
+              <button class="product__button-size__like hover-button" type="submit"></button>
             </div>
 
           </div>
@@ -189,14 +189,14 @@
               <h2 class="product__details-title">Подробности</h2>
 
               <div class="product__details-info">
-                <button class="product__details-button " type="button">Состав и уход</button>
+                <button class="product__details-button hover-button" type="button">Состав и уход</button>
                 <p class="product__details-text accordion">
                   Легкие вязаные брюки для дней, когда хочется расслабиться. Дополните их джемпером и футболкой или уютным худи из нашей коллекции. Мы выбрали для брюк шелковистую пряжу из вискозы и небольшого количества искусственных волокон: благодаря такому составу гладкий трикотаж приятно облегает ноги, меньше мнется и сохраняет прочность после стирок.
                 </p>
               </div>
 
               <div class="product__details-info">
-                <button class="product__details-button " type="button">Обмеры и описание</button>
+                <button class="product__details-button hover-button" type="button">Обмеры и описание</button>
                 <p class="product__details-text accordion">
                   Легкие вязаные брюки для дней, когда хочется расслабиться. Дополните их джемпером и футболкой или уютным худи из нашей коллекции. Мы выбрали для брюк шелковистую пряжу из вискозы и небольшого количества искусственных волокон: благодаря такому составу гладкий трикотаж приятно облегает ноги, меньше мнется и сохраняет прочность после стирок.
                 </p>
@@ -231,117 +231,120 @@
 
 <div class="swiper-wrapper analogic__wrapper">
 
-  <div class="swiper-slide analogic__slide">
-        <a class="favorites__element" href="#">
 
-          <button class="favorites__button-like"></button>
-          <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
-
-          <div class="favorites__info">
-            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
-            <p class="favorites__info-subtitle">5500 ₽</p>
-          </div>
-
-        </a>
-      </div>
 
 
 
       <div class="swiper-slide analogic__slide">
-        <a class="favorites__element" href="#">
-
+        <div class="favorites__card">
           <button class="favorites__button-like"></button>
-          <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/bgBg2.png">
 
-          <div class="favorites__info">
-            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
-            <p class="favorites__info-subtitle">5500 ₽</p>
-          </div>
+          <a class="favorites__element" href="#">
 
-        </a>
+            <span class="favorites__span">SALE</span>
+            <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+        </div> 
+      </div>
+
+      <div class="swiper-slide analogic__slide">
+        <div class="favorites__card">
+          <button class="favorites__button-like"></button>
+
+          <a class="favorites__element" href="#">
+
+            <span class="favorites__span">SALE</span>
+            <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+        </div> 
+      </div>
+
+      <div class="swiper-slide analogic__slide">
+        <div class="favorites__card">
+          <button class="favorites__button-like"></button>
+
+          <a class="favorites__element" href="#">
+
+            <span class="favorites__span">SALE</span>
+            <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+        </div> 
+      </div>
+
+      <div class="swiper-slide analogic__slide">
+        <div class="favorites__card">
+          <button class="favorites__button-like"></button>
+
+          <a class="favorites__element" href="#">
+
+            <span class="favorites__span">SALE</span>
+            <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+        </div> 
       </div>
 
 
       <div class="swiper-slide analogic__slide">
-        <a class="favorites__element" href="#">
-
+        <div class="favorites__card">
           <button class="favorites__button-like"></button>
-          <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
 
-          <div class="favorites__info">
-            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
-            <p class="favorites__info-subtitle">5500 ₽</p>
-          </div>
+          <a class="favorites__element" href="#">
 
-        </a>
+            <span class="favorites__span">SALE</span>
+            <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+        </div> 
       </div>
 
-
       <div class="swiper-slide analogic__slide">
-        <a class="favorites__element" href="#">
-
+        <div class="favorites__card">
           <button class="favorites__button-like"></button>
-          <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/bgBg1.png">
 
-          <div class="favorites__info">
-            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
-            <p class="favorites__info-subtitle">5500 ₽</p>
-          </div>
+          <a class="favorites__element" href="#">
 
-        </a>
+            <span class="favorites__span">SALE</span>
+            <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
+
+            <div class="favorites__info">
+              <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
+              <p class="favorites__info-subtitle">5500 ₽</p>
+            </div>
+
+          </a>
+        </div> 
       </div>
-        
-      <div class="swiper-slide analogic__slide">
-        <a class="favorites__element" href="#">
 
-          <button class="favorites__button-like"></button>
-          <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
-
-          <div class="favorites__info">
-            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
-            <p class="favorites__info-subtitle">5500 ₽</p>
-          </div>
-
-        </a>
-      </div>
-      <div class="swiper-slide analogic__slide">
-        <a class="favorites__element" href="#">
-
-          <button class="favorites__button-like"></button>
-          <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/tovar.png">
-
-          <div class="favorites__info">
-            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
-            <p class="favorites__info-subtitle">5500 ₽</p>
-          </div>
-
-        </a>
-      </div>
-      <div class="swiper-slide analogic__slide">
-        <a class="favorites__element" href="#">
-
-          <button class="favorites__button-like"></button>
-          <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/bgBg2.png">
-
-          <div class="favorites__info">
-            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
-            <p class="favorites__info-subtitle">5500 ₽</p>
-          </div>
-
-        </a>
-      </div>
-      <div class="swiper-slide analogic__slide">
-        <a class="favorites__element" href="#">
-
-          <button class="favorites__button-like"></button>
-          <img class="favorites__image analogic__image" alt="Картинка товара" src="../src/images/bgBg1.png">
-
-          <div class="favorites__info">
-            <p class="favorites__info-title">LT 01 Shades Nubuck Desert Taupe</p>
-            <p class="favorites__info-subtitle">5500 ₽</p>
-          </div>
-
-        </a>
+   
       </div>
       </div>
 

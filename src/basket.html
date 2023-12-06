@@ -17,12 +17,12 @@
       <div class="header__info">
         <div class="header__burger-menu">
         
-          <button class="header__burger" type="button"></button>
+          <button class="header__burger hover-button" type="button"></button>
           <p class="header__burger-title">Меню</p>
         </div>
   
         <div class="header__nav">
-  
+          <button class="burger__close"></button>
           <ul class="header__links">
             <li class="header__link"><a href="../src/main.html" class="header__link-element">Каталог</a></li>
             <li class="header__link"><a href="#" class="header__link-element">О нас</a></li>
@@ -35,10 +35,10 @@
         <img src="../src/images/Logotype.png" class="header__logo" alt="Логотип">
   
         <div class="header__buttons">
-          <button class="header__search-button open-search"></button>
-          <button class="header__like-button" onclick="document.location='../src/index.html'"></button>
+          <button class="header__search-button open-search hover-button "></button>
+          <button class="header__like-button hover-button " onclick="document.location='../src/index.html'"></button>
         <label class="button__shop-label">
-          <button class="header__shop-button "onclick="document.location='../src/basket.html'"></button>
+          <button class="header__shop-button hover-button"onclick="document.location='../src/basket.html'"></button>
           <span class="header__shop-button_span">21</span>
         </label>
         </div>
@@ -47,7 +47,7 @@
         <form class="header__form">
   
           <input type="search" id="search" name="header-search" class="header__input"  required="" minlength="3" maxlength="40" value="" placeholder="Поиск">
-          <button class="header__button__close-search close-search" type="button"></button>
+          <button class="header__button__close-search close-search hover-button " type="button"></button>
   
         </form>
   
@@ -76,13 +76,15 @@
                                 <span class="checkout__color-span">Цвет:Черный</span>
                             </div> 
                             <div class="checkout__size-choice">
-                                <button class="checkout__size-button accordion-button">XS <img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image categories__image-cat"></button>
-                                <ul class='checkout__list accordion'>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">XS</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">S</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">M</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">L</p> </li>
-                                  </ul>
+                                <select class="checkout__size-button">
+                                  <option class="checkout__list-text">XS</option>
+                                  <option class="checkout__list-text">S</option>
+                                  <option class="checkout__list-text">LS</option>
+
+                                  <option class="checkout__list-text">XS</option>
+
+                                </select>
+                              
                             </div> 
 
                             <div class="checkout__count">
@@ -95,84 +97,92 @@
 
                         </div>
 
-                        <button class="checkout__delete" type="button"></button>
+                        <button class="checkout__delete hover-button " type="button"></button>
 
                     </div>
 
 
                     <div class="checkout__element">
-                        <span class="favorites__span">SALE</span>
-                        <img class="checkout__image" src="../src/images/tovar.png" alt="Карточка товара">
+                      <span class="favorites__span">SALE</span>
+                      <img class="checkout__image" src="../src/images/tovar.png" alt="Карточка товара">
 
-                        <div class="checkout__text">
-                            <p class="checkout__text-title">LT 01 Shades Nubuck Desert Taupe</p>
-                            <p class="checkout__text-price">3000 ₽</p>
+                      <div class="checkout__text">
+                          <p class="checkout__text-title">LT 01 Shades Nubuck Desert Taupe</p>
+                          <p class="checkout__text-price">3000 ₽</p>
 
-                            <div class="checkout__settings">
-                               <div class="checkout__color-choice">
-                                <button class="checkout__settings-color"></button>
-                                <span class="checkout__color-span">Цвет:Черный</span>
-                            </div> 
-                            <div class="checkout__size-choice">
-                                <button class="checkout__size-button accordion-button">XS <img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image categories__image-cat"></button>
-                                <ul class='checkout__list accordion'>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">XS</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">S</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">M</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">L</p> </li>
-                                  </ul>
-                            </div> 
+                          <div class="checkout__settings">
+                             <div class="checkout__color-choice">
+                              <button class="checkout__settings-color"></button>
+                              <span class="checkout__color-span">Цвет:Черный</span>
+                          </div> 
+                          <div class="checkout__size-choice">
+                              <select class="checkout__size-button">
+                                <option class="checkout__list-text">XS</option>
+                                <option class="checkout__list-text">S</option>
+                                <option class="checkout__list-text">LS</option>
 
-                            <div class="checkout__count">
-                                <input type="button" value="-" id="button_minus" class="checkout__minus">
-                                <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" class="checkout__number" value="1" title="Qty">
-                                <input type="button" value="+" id="button_plus" class="checkout__plus">
-                            </div>
+                                <option class="checkout__list-text">XS</option>
 
-                            </div>
+                              </select>
+                            
+                          </div> 
+
+                          <div class="checkout__count">
+                              <input type="button" id="button_minus" class="checkout__minus">
+                              <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" class="checkout__number" value="1" title="Qty">
+                              <input type="button"  id="button_plus" class="checkout__plus">
+                          </div>
+
+                          </div>
+
+                      </div>
+
+                      <button class="checkout__delete hover-button " type="button"></button>
+
+                  </div>
+
+
+                  <div class="checkout__element">
+                    <span class="favorites__span">SALE</span>
+                    <img class="checkout__image" src="../src/images/tovar.png" alt="Карточка товара">
+
+                    <div class="checkout__text">
+                        <p class="checkout__text-title">LT 01 Shades Nubuck Desert Taupe</p>
+                        <p class="checkout__text-price">3000 ₽</p>
+
+                        <div class="checkout__settings">
+                           <div class="checkout__color-choice">
+                            <button class="checkout__settings-color"></button>
+                            <span class="checkout__color-span">Цвет:Черный</span>
+                        </div> 
+                        <div class="checkout__size-choice">
+                            <select class="checkout__size-button">
+                              <option class="checkout__list-text">XS</option>
+                              <option class="checkout__list-text">S</option>
+                              <option class="checkout__list-text">LS</option>
+
+                              <option class="checkout__list-text">XS</option>
+
+                            </select>
+                          
+                        </div> 
+
+                        <div class="checkout__count">
+                            <input type="button" id="button_minus" class="checkout__minus">
+                            <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" class="checkout__number" value="1" title="Qty">
+                            <input type="button"  id="button_plus" class="checkout__plus">
+                        </div>
 
                         </div>
 
-                        <button class="checkout__delete" type="button"></button>
-
                     </div>
 
-                    <div class="checkout__element">
-                        <span class="favorites__span">SALE</span>
-                        <img class="checkout__image" src="../src/images/tovar.png" alt="Карточка товара">
+                    <button class="checkout__delete hover-button " type="button"></button>
 
-                        <div class="checkout__text">
-                            <p class="checkout__text-title">LT 01 Shades Nubuck Desert Taupe</p>
-                            <p class="checkout__text-price">3000 ₽</p>
+                </div>
 
-                            <div class="checkout__settings">
-                               <div class="checkout__color-choice">
-                                <button class="checkout__settings-color"></button>
-                                <span class="checkout__color-span">Цвет:Черный</span>
-                            </div> 
-                            <div class="checkout__size-choice">
-                                <button class="checkout__size-button accordion-button">XS <img src="../src/images/strelkaCat.svg" alt="Стрелочка" class="categories__image categories__image-cat"></button>
-                                <ul class='checkout__list accordion'>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">XS</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">S</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">M</p> </li>
-                                    <li class="checkout__list-element"><p class="checkout__list-text">L</p> </li>
-                                  </ul>
-                            </div> 
 
-                            <div class="checkout__count">
-                                <input type="button" value="-" id="button_minus" class="checkout__minus">
-                                <input type="number" step="1" min="1" max="100" id="num_count" name="quantity" class="checkout__number" value="1" title="Qty">
-                                <input type="button" value="+" id="button_plus" class="checkout__plus">
-                            </div>
 
-                            </div>
-
-                        </div>
-
-                        <button class="checkout__delete" type="button"></button>
-
-                    </div>
 
                 </div>
 
@@ -191,7 +201,7 @@
             </ul>
             <p class="order__total">Итого</p>
             <span class="order__total-span">125 000₽</span>
-            <button class="order__button" onclick="document.location='../src/order.html'">Продолжить</button>
+            <button class="order__button hover-button" onclick="document.location='../src/order.html'">Продолжить</button>
 
 
         </section>

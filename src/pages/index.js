@@ -2,7 +2,7 @@ const swiper = new Swiper('.swipe__images .swiper-container', {
   loop: true,
 
   direction: 'vertical', 
-
+  slideToClickedSlide: true,
   slidesPerView: 1, 
   spaceBetween: 32,
   mousewheel: true,
@@ -39,6 +39,7 @@ const swiper = new Swiper('.swipe__images .swiper-container', {
 
 const swiper1 = new Swiper('.product__images .swiper-container', {
   direction: 'vertical', 
+  slideToClickedSlide: true,
 
   slidesPerView: 1, 
   spaceBetween: 32,
@@ -118,7 +119,7 @@ const accordion = document.querySelector('.accordion');
 const accordionOpenButton = document.querySelectorAll('.accordion-button');
 
 const burgerButton = document.querySelector('.header__burger')
-
+const closeBurger = document.querySelector('.burger__close')
 const  buergerMenu = document.querySelector('.header__nav')
 
 
@@ -126,7 +127,7 @@ function openBurgerMenu(){
   buergerMenu.classList.add('header__nav-open')
 }
 function closeBurgerMenu(){
-  buergerMenu.classList.remove('navigation_nav_open')
+  buergerMenu.classList.remove('header__nav-open')
 }
 
 
@@ -161,7 +162,7 @@ accordionOpenButton.forEach((elem)=>{
 
 
 burgerButton.addEventListener('click', openBurgerMenu)
-
+closeBurger.addEventListener('click', closeBurgerMenu)
 
 const acc = document.querySelectorAll('.accordion');
 

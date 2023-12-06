@@ -50,7 +50,12 @@ background: var(--background-light-brown, #F8F5EE);
 width: 39px;
 text-align: center;
 }
-
+.favorites__card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+}
 .favorites__button-like{
     position: absolute;
     right: 12px;
@@ -62,7 +67,6 @@ text-align: center;
     border: none;
     height: 24px;
     width: 24px;
-    cursor: pointer;
 }
 .favorites__info{
     display: flex;
@@ -99,8 +103,15 @@ margin: 0;
     
 
 }
+.favorites__button-like{
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
 
-
+}
+.favorites__card:hover button{
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
 @media screen and (max-width: 1360px) {
     .favorites__grid{
         width: 1080px;
@@ -264,9 +275,14 @@ margin: 0;
 
     @media screen and (max-width: 768px){
         .favorites-main{
-            width: 463px;
+            width: 470px;
         }
       
+    }
+    @media screen and (max-width: 740px){
+        .favorites-main{
+            margin-top: 24px;
+        }
     }
     @media screen and (max-width: 690px){
         .favorites-main{
